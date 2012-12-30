@@ -14,5 +14,5 @@
 #   grammer, and case.                                  #
 #                                                       #
 # Templates rendered:                                   #
-# - index.html		   		                            #
+# - index.html		   		                                #
 #########################################################

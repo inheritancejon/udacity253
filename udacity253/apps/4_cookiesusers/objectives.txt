@@ -1,21 +1,21 @@
 #########################################################
 # Problem Set 4 - User Registration, Login, Logout      #
-#				(Cookies & Users)						#
-#														#
+#				(Cookies & Users)																#
+#																												#
 # Note- Problem Set 4 has three homework problems.	    #
 #       It is easiest to combine all three into one app.#
 #                                                       #    
 # Goals:                                                #
 # - Create a user registration page that allows users   #
-#	register to a database, and sets a user_id cookie   #
+#	register to a database, and sets a user_id cookie 	  #
 # - While user_id cookie is still set, every visit to   #
 #   welcome pages should still say "Welcome,            #
-#   [appropriate_username]!" 						    #
+#   [appropriate_username]!" 						   							#
 # - A logout url should reset the user_id cookie to ""  #
 #   so the welcome page redirects to the signup page    #
 # - A login page should allow registered users to login #
 #   and have a valid user_id set, so the welcome page   #
-#   welcomes them by name.								#
+#   welcomes them by name.															#
 #                                                       #
 # Requirements:                                         #
 # - User signup page must follow all the validation     #
@@ -26,6 +26,6 @@
 # - The form methods must be POST, not GET.             #
 #                                                       #
 # Templates rendered:                                   #
-# - login.html   	  			                        #
-# - signup.html											#
+# - login.html   	  			         			              	#
+# - signup.html																					#
 #########################################################

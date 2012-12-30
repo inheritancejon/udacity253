@@ -5,5 +5,5 @@
 # - Put online a basic app that says "Hello, Udacity!"  #     
 #                                                       #
 # Templates rendered:                                   #
-# - index.html		   		                            #
+# - index.html		   		                                #
 #########################################################

@@ -13,12 +13,12 @@
 #   to append ".json" to the end of the URI. The result #
 #   should an http response, with appropriate json      #
 #   header, with the contents of the blog entry/entries #
-#   properly wrapped in json.							#
-#														#
+#   properly wrapped in json.														#
+#																												#
 # Templates rendered:                                   #
-# - index.html		  			                        #
-# - login.html		  			                        #
-# - newpost.html		 		                        #
-# - post.html		  			                        #
-# - signup.html		  			                        #
+# - index.html		  			                     				  #
+# - login.html		  			                        			#
+# - newpost.html		 		                        				#
+# - post.html		  			                       	 				#
+# - signup.html		  			                        			#
 #########################################################

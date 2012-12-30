@@ -9,13 +9,13 @@
 #   10 entries.                                         #
 # - A form to submit new blog entries at /newpost       #
 # - Successful blog submit should goto a permalink for  #
-#   entry.												#
+#   entry.																							#
 # - The inputs on the submission page need to have the  #
-#   names "subject" and "content".						#
+#   names "subject" and "content".											#
 # - The form method must be POST, not GET.              #
 #                                                       #
 # Templates rendered:                                   #
-# - index.html		  			                        #
-# - newpost.html		  			                    #
-# - post.html		  			                        #
+# - index.html		  			         			                #
+# - newpost.html		  			            				        #
+# - post.html		  			                      				  #
 #########################################################
