@@ -161,3 +161,8 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+secret_key.py
+db
+settings_production.py
+
