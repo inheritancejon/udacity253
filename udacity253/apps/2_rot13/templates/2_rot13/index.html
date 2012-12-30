@@ -1,0 +1,30 @@
+{% extends "base_site.html" %}
+
+{% comment %}
+
+Problem Set 2 - Rot13
+
+index.html
+
+Template for rendering a POST form that returns the same template but
+with the form input 'text' encoded.
+
+{% endcomment %}
+
+{% block content %}
+
+<style>
+	textarea{
+		resize: none;
+	}
+</style>
+
+
+Rot13 Template
+
+<form action="" method="post">
+<textarea rows="10" cols="50" name="text"  />{{ text }}</textarea>
+<input type="submit" value="Submit" />
+</form>
+
+{% endblock %}

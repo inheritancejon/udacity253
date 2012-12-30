@@ -1,0 +1,24 @@
+#########################################################
+# Problem Set 5 - Json API Blog                         #
+#                                                       #    
+# Goals:                                                #
+# - Create a blog that has a Json API built in to it.   #
+#                                                       #
+# Requirements:                                         #
+# - This app must have all the functionality of homework#
+#   3 and 4. Both the blog, and user reg/login/logout   #
+#   urls and views must work and be functional.         #
+# - In addition, when a user visist the blog homepage,  #
+#   or a permalink of a blog entry, they should be able #
+#   to append ".json" to the end of the URI. The result #
+#   should an http response, with appropriate json      #
+#   header, with the contents of the blog entry/entries #
+#   properly wrapped in json.							#
+#														#
+# Templates rendered:                                   #
+# - index.html		  			                        #
+# - login.html		  			                        #
+# - newpost.html		 		                        #
+# - post.html		  			                        #
+# - signup.html		  			                        #
+#########################################################

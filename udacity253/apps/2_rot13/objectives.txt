@@ -1,0 +1,18 @@
+#########################################################
+# Problem Set 2 - Rot13                                 #
+#                                                       #    
+# Goals:                                                #
+# - Make a webpage that lets you ROT13 some text in a   #
+#   form.                                               #     
+#                                                       #
+# Requirements:                                         #
+# - The form should properly escape HTML so that it     #
+#   does not break.                                     #
+# - The form method must be POST, not GET.              #
+# - The form input needs to have the name "text".       #
+# - The ROT13 encoding should perserve white-space,     #
+#   grammer, and case.                                  #
+#                                                       #
+# Templates rendered:                                   #
+# - index.html		   		                            #
+#########################################################
