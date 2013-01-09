@@ -49,6 +49,7 @@ def newpost(request):
 def index(request):
     # Grab a list of last ten posts ordered by most recently created
     posts = Post.objects.all().order_by("-date_created")[:10]
+    posts = list(posts)
     # Render index with list of blog entries
     d=dict(posts=posts)
     return render_to_response("3_basicblog/index.html", d, context_instance=RequestContext(request))

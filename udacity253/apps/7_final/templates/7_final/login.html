@@ -1,0 +1,21 @@
+{% extends "7_final/7_base.html" %}
+
+{% comment %}
+
+Problem Set 7 - Wiki
+
+login.html
+
+{% endcomment %}
+
+{% block content %}
+
+<h3>User Login</h3>
+
+<form action="" method="post">
+<label>Username:</label> <input name="username" type="text" value="{{ username }}"><span class="error">{{ error.username }}</span>
+<label>Password:</label> <input name="password" type="text" value="{{ password }}"><span class="error">{{ error.password }}</span>
+<input type="submit" value="Submit" />
+</form>
+
+{% endblock %}

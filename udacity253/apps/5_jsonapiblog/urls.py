@@ -17,6 +17,7 @@ urlpatterns = patterns('udacity253.apps.5_jsonapiblog.views',
     url(r'^logout$', 'logout', name='jsonapiblog_logout'),
     # welcome message
     url(r'^welcome$', 'welcome', name='jsonapiblog_welcome',),
-
+    # flush the cache
+    url('^flush$', 'flush', name='jsonapiblog_flush'),
 )
 

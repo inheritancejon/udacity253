@@ -119,10 +119,21 @@
 				color: gray;
 				font-size: 12px;
 			}
+			table {
+				border-collapse: collapse;
+				width:100%;
+			}
+			table, th, td {
+				border: 1px solid black;
+			}
+			th {
+				background-color: gray;
+			}
 		</style>
 	</head>
 	<a href="{% url home %}">Course Home</a>
 	<br />
+	{% block menu %}{% endblock %}
 	<br />
 	{% block content %}{% endblock %}
 

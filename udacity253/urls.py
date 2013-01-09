@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic.simple import direct_to_template
+from django.views.decorators.cache import cache_page
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -8,7 +9,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # / 
     # Generic view that links to all problem sets in the course
-    url(r'^$', direct_to_template, {'template':'udacity_253.html'}, name='home'),
+    url(r'^$', cache_page(1*1)(direct_to_template), {'template':'udacity_253.html'}, name='home'),
   
     # /problem_set_unit#_homework/
     # Include Udacity 253 solution apps urlconfs
@@ -18,6 +19,7 @@ urlpatterns = patterns('',
     url(r'^3_basicblog/', include('udacity253.apps.3_basicblog.urls')),
     url(r'^4_cookiesusers/', include('udacity253.apps.4_cookiesusers.urls')),
     url(r'^5_jsonapiblog/', include('udacity253.apps.5_jsonapiblog.urls')),
+    url(r'^7_final/', include('udacity253.apps.7_final.urls')),
     # Include the Django admin for easy maintanence 
     url(r'^admin/', include(admin.site.urls)),
 )
