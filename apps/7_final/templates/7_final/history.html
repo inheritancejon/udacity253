@@ -1,0 +1,37 @@
+{% extends "7_final/7_base.html" %}
+
+{% comment %}
+
+Problem Set 7 - Final
+
+history.html
+
+{% endcomment %}
+
+{% block content %}
+<div class="content-area">
+
+History for page: {{ page }}
+<br><br>
+
+<table>
+<tr>
+	<th>#</th>
+	<th>Date</th>
+	<th>Page value</th>
+	<th>View?</th>
+	<th>Edit?</th>
+</tr>
+{% for version in versions %}
+<tr>
+	<td>{{ version.version }}</td>
+	<td>{{ version.date_created }}</td>
+	<td>{{ version.content }}</td>
+	<td><a href="{% url final_wiki page=version.page.page_url %}?v={{ version.version }}">View</a></td>
+	<td><a href="{% url final__edit page=version.page.page_url %}?v={{ version.version }}">Edit</a></td>
+</tr>
+{% endfor %}
+</table>
+
+</div>
+{% endblock %}

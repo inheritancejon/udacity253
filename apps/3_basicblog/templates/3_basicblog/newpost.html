@@ -1,0 +1,23 @@
+{% extends "3_basicblog/3_base.html" %}
+
+{% comment %}
+
+Problem Set 3 - Basic Blog
+
+newpost.html
+
+{% endcomment %}
+
+{% block content %}
+<div class="content-area">
+	
+New Post
+
+<form method="post">
+<input type="text" name="subject">
+<textarea name="content">{{ text }}</textarea>
+<input type="submit" value="Submit">
+</form>
+
+</div>
+{% endblock %}

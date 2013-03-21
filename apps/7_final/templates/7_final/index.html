@@ -1,0 +1,19 @@
+{% extends "7_final/7_base.html" %}
+
+{% comment %}
+
+Problem Set 7 - Final 
+
+index.html
+
+{% endcomment %}
+
+{% block content %}
+<div class="content-area">
+	
+{% autoescape off %}
+{{ content }}
+{% endautoescape %}
+
+</div>
+{% endblock %}

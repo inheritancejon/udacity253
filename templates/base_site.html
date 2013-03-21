@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- udacity-cs253.appspot.com/static/main.css -->
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}main.css">
+		<title>Udacity Course 253 Solutions</title>
+	</head>
+	<a href="{% url home %}">My Solution's Home</a> - <a href="https://www.udacity.com/course/cs253">Udacity 253 Course Home</a>
+	<br />
+	{% block menu %}{% endblock %}
+	<br />
+	{% block content %}{% endblock %}
+
+</html>

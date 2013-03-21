@@ -1,0 +1,25 @@
+{% extends 'base_site.html' %}
+
+{% block menu %}
+
+<div class="solution-menu">
+<span class="menu-description">
+Solutions to Udacity Course 253 - styles by Udacity, styles by Jonathan Crawford, Python by Jonathan Crawford.
+</span>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="content-area">
+	
+<a href="{% url appengine_index %}">Problem Set 1 - App Engine</a><br>
+<a href="{% url rot13_index %}">Problem Set 2 - Rot13</a><br>
+<a href="{% url usersignup_index %}">Problem Set 2 - User Signup</a><br>
+<a href="{% url basicblog_index %}">Problem Set 3 - Basic Blog</a><br>
+<a href="{% url cookiesusers_signup %}">Problem Set 4 - User Registartion, Log in, and Log Out (Users and Cookies)</a><br>
+<a href="{% url jsonapiblog_index %}">Problem Set 5/6 - Json API Blog with Caching</a><br>
+<a href="{% url final_wiki %}">Final</a>
+
+</div>
+{% endblock %}

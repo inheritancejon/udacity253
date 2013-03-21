@@ -1,0 +1,30 @@
+{% extends "5_jsonapiblog/5_base.html" %}
+
+{% comment %}
+
+Problem Set 5 - Json API Blog
+
+index.html
+
+{% endcomment %}
+
+{% block content %}
+
+<div class="main-title">Blog</div>
+
+{% for post in posts %}
+<div class="content-area">
+	<div class="post">
+		<div class="post-title">
+		<a href="{{ post.get_absolute_url }}">
+			{{ post.subject }}
+		</a>
+		</div>
+		<div class="post-content">{{ post.content }}</div>
+	</div>
+</div>
+<br>
+{% endfor %}
+
+Queried {{ age }} seconds ago
+{% endblock %}

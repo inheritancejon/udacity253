@@ -1,0 +1,26 @@
+#########################################################
+# Problem Set 2 - User Signup                           #
+#                                                       #    
+# Goals:                                                #
+# - Create a signup page that validates a users input.  #
+#                                                       #
+# Requirements:                                         #
+# - Gather four inputs:                                 #
+#   -name, password, verify password, email             #
+# - Email is optional.                                  #
+# - If user enters invalid data, an error message       #
+#   should be generated and the form re-rendered.       #
+# - If user enters invalid data, the user and email     #
+#   data should repopulate when the form is             #
+#   re-rendered.                                        #
+# - The inputs need to have the names "name", "password"#
+#   , "verify", and "email".                            #
+# - Valid POST data submission must render a new        #
+#   response with "Welcome, [user]!"                    #
+# - The form should properly escape HTML so that it     #
+#   does not break.                                     #
+# - The form method must be POST, not GET.              #
+#                                                       #
+# Templates rendered:                                   #
+# - index.html					                        #
+#########################################################

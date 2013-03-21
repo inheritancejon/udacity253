@@ -1,0 +1,23 @@
+{% extends "4_cookiesusers/4_base.html" %}
+
+{% comment %}
+
+Problem Set 4 - User Registration
+
+login.html
+
+{% endcomment %}
+
+{% block content %}
+<div class="content-area">
+	
+User Login
+<br><br>
+<form method="post">
+<label>Username:</label> <input name="username" type="text" value="{{ username }}"><span class="error">{{ error.username }}</span>
+<label>Password:</label> <input name="password" type="text" value="{{ password }}"><span class="error">{{ error.password }}</span>
+<input type="submit" value="Submit" />
+</form>
+
+</div>
+{% endblock %}

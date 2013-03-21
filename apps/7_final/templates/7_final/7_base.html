@@ -1,0 +1,24 @@
+{% extends "base_site.html" %}
+
+{% block menu %}
+
+<div class="solution-menu">
+<span class="menu-description">
+This is the menu for <a href="{% url final_wiki %}">The Final</a>
+</span>
+<span class="nav">
+{% if name %}
+{% if page != "" %}
+<a href="/7_final/_edit/{{ page }}{% if version != None %}?v={{ version }}{% endif %}">Edit</a>
+ | 
+<a href="/7_final/_history/{{ page }}">History</a>
+{% endif %}
+&nbsp;&nbsp;&nbsp;({{ name }}) <a href="/7_final/logout">logout</a>
+{% else %}
+<a href="/7_final/login">Log in</a> | <a href="/7_final/signup">Sign up</a>
+{% endif %}
+</span>
+</div>
+{% endblock %}
+
+{% block content %}{% endblock %}

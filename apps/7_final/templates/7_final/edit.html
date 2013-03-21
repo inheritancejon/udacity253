@@ -1,0 +1,23 @@
+{% extends "7_final/7_base.html" %}
+
+{% comment %}
+
+Problem Set 7 - Wiki
+
+edit.html
+
+{% endcomment %}
+
+{% block content %}
+<div class="content-area">
+	
+Edit page: {{ page }}
+<br><br>
+<form method="post">
+	<textarea name="content">{{ content }}</textarea>
+	<input type="submit">
+</form>
+<br>
+
+</div>
+{% endblock %}
